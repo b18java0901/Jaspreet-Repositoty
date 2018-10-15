@@ -26,7 +26,6 @@ public class Length_Converter extends JFrame {
 	private JComboBox comboBox;
 	private JComboBox comboBox_1;
 	String[] Length={"Millimeter","CentiMeter","Meter","KiloMeter"};
-	private JButton btnConvert;
 
 	/**
 	 * Launch the application.
@@ -86,8 +85,6 @@ public class Length_Converter extends JFrame {
 //		comboBox_1.addItem("KiloMeter");
 		comboBox_1.setBounds(279, 115, 86, 20);
 		contentPane.add(comboBox_1);
-		
-		btnConvert = new JButton("Convert");
 		/*btnConvert.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				double a ,c =0;
@@ -203,8 +200,5 @@ public class Length_Converter extends JFrame {
 			
 			
 		});
-		btnConvert.setFont(new Font("Tahoma", Font.BOLD, 14));
-		btnConvert.setBounds(177, 155, 98, 32);
-		contentPane.add(btnConvert);
 	}
 }
