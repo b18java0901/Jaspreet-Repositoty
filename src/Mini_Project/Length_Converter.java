@@ -16,6 +16,8 @@ import java.awt.event.ItemListener;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import java.awt.Color;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 public class Length_Converter extends JFrame {
@@ -51,6 +53,7 @@ public class Length_Converter extends JFrame {
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.LIGHT_GRAY);
+		setContentPane(new JLabel(new ImageIcon("C:\\Users\\Dell\\Pictures\\Feedback\\{3D7015CB-393E-420F-A52D-17D87E540BD6}")));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
