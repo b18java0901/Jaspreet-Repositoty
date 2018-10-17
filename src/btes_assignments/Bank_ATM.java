@@ -59,15 +59,16 @@ public class Bank_ATM
 			withdraw=Double.parseDouble(br.readLine());
 			if (balance>10000)
 			{
-				double balance1= balance-withdraw;
-				if(balance1>10000)
-				System.out.println("Your new balance is"+ balance1);
+				 balance= balance-withdraw;
+				if(balance>10000)
+				System.out.println("Your new balance is"+ balance);
 				else
 					System.out.println("Please Maintain Minimum 10000 Balance");
-					balance=balance1;
+					
 			}
 			else if(balance <10000)
-				throw new Insuficient_Balance_Exception("Minimum Balance should be 10,000.\nPlease add more money");
+				throw new Insuficient_Balance_Exception("Minimum Balance should be 10,000.\nPleasey add more money");
+			System.out.println(balance);
 		}
 		catch(Exception e) 
 		{
@@ -89,6 +90,7 @@ public class Bank_ATM
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter ATM pin");
 		atmpin=Double.parseDouble(br.readLine());
+		System.out.println("your available balance is :: "+balance);
 	}
 
 	
